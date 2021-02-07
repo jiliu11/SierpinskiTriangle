@@ -1,4 +1,4 @@
-int lengy = 30;
+int lengy = 800;
 
 void serpenski(int len, int xbepp, int ybepp){
   fill((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
@@ -21,10 +21,4 @@ void draw(){
   frameRate(5);
   serpenski(lengy,0,800);
 }
-void mouseMoved(){
-  frameRate(60);
-  lengy+=5;
-  if(lengy >= 1600){
-    lengy = 800;
-  }
-}
+
